@@ -1,0 +1,34 @@
+FROM node:22.14-bookworm-slim AS build
+
+WORKDIR /app
+ENV NODE_ENV=production
+
+# Railway exposes declared public variables to Docker builds. These values are
+# intentionally browser-safe; GHL URLs and Turnstile secrets remain runtime-only.
+ARG NEXT_PUBLIC_SITE_URL
+ARG NEXT_PUBLIC_WHATSAPP_NUMBER
+ARG NEXT_PUBLIC_TURNSTILE_SITE_KEY
+ARG NEXT_PUBLIC_GTM_ID
+ARG NEXT_PUBLIC_ANALYTICS_CONSENT_APPROVED=false
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+ENV NEXT_PUBLIC_WHATSAPP_NUMBER=$NEXT_PUBLIC_WHATSAPP_NUMBER
+ENV NEXT_PUBLIC_TURNSTILE_SITE_KEY=$NEXT_PUBLIC_TURNSTILE_SITE_KEY
+ENV NEXT_PUBLIC_GTM_ID=$NEXT_PUBLIC_GTM_ID
+ENV NEXT_PUBLIC_ANALYTICS_CONSENT_APPROVED=$NEXT_PUBLIC_ANALYTICS_CONSENT_APPROVED
+
+COPY package.json package-lock.json ./
+RUN npm ci --include=dev
+
+COPY . .
+RUN npm run build
+
+FROM node:22.14-bookworm-slim AS runtime
+
+WORKDIR /app
+ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+
+COPY --from=build /app/dist/standalone ./
+
+EXPOSE 3000
+CMD ["node", "server.js"]
