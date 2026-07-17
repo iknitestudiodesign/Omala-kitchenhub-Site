@@ -52,13 +52,23 @@ test("renders core public and legal routes", async () => {
   }
 });
 
-test("production health fails safely until launch integrations are configured", async () => {
+test("production health stays live while reporting incomplete integrations", async () => {
   const response = await request("/api/health", { headers: { accept: "application/json" } });
+  assert.equal(response.status, 200);
+  const body = await response.json();
+  assert.equal(body.ok, true);
+  assert.equal(body.ready, false);
+  assert.equal(body.status, "configuration_required");
+  assert.deepEqual(Object.keys(body).sort(), ["ok", "ready", "service", "status"]);
+});
+
+test("production readiness remains unavailable until integrations are configured", async () => {
+  const response = await request("/api/readiness", { headers: { accept: "application/json" } });
   assert.equal(response.status, 503);
   const body = await response.json();
   assert.equal(body.ok, false);
+  assert.equal(body.ready, false);
   assert.equal(body.status, "configuration_required");
-  assert.deepEqual(Object.keys(body).sort(), ["ok", "service", "status"]);
 });
 
 test("unknown kitchen routes return the designed 404", async () => {

@@ -57,11 +57,17 @@ across replicas.
 
 The repository includes a deterministic Docker build and Railway health check.
 Connect the repository to Railway, add the production environment values, and
-deploy. The compact standalone server listens on Railway's `PORT`, and `/api/health` reports
-readiness without exposing secrets. In production, health returns unavailable
-until every GHL webhook, Turnstile key, public URL, WhatsApp fallback and
-consent version is configured, preventing a half-connected release from being
-marked ready.
+deploy. The compact standalone server listens on Railway's `PORT`.
+`/api/health` is a liveness check that stays available for Railway while its
+response reports whether integrations are ready. `/api/readiness` remains
+unavailable until every GHL webhook, Turnstile key, public URL, WhatsApp
+fallback and consent version is configured. Forms continue to fail safely when
+their GHL workflow is not configured.
+
+The Docker image supplies safe defaults for the consent version, per-instance
+rate limit and disabled analytics state. Turnstile and GHL webhook values are
+intentionally never baked into source or the image; add their real values as
+Railway secrets when those integrations are ready.
 
 The site always emits a small vendor-neutral analytics event layer. Google Tag
 Manager loads only when both a valid `NEXT_PUBLIC_GTM_ID` and
