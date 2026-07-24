@@ -375,7 +375,7 @@ function validateKitchenApplication(body: JsonRecord): ValidationResult<KitchenA
       body,
       "serviceContactConsent",
       issues,
-      "Consent is required so Omala can contact you about this application.",
+      "Consent is required so Ekoraa can contact you about this application.",
     ),
     pilotInterest,
   };
@@ -406,13 +406,13 @@ function validateOrderRequest(body: JsonRecord): ValidationResult<OrderRequestDa
       body,
       "orderAcknowledgement",
       issues,
-      "Acknowledge that Omala must confirm availability, price, and fulfillment.",
+      "Acknowledge that Ekoraa must confirm availability, price, and fulfillment.",
     ),
     serviceContactConsent: requiredConfirmation(
       body,
       "serviceContactConsent",
       issues,
-      "Consent is required so Omala can contact you about this request.",
+      "Consent is required so Ekoraa can contact you about this request.",
     ),
   };
   return issues.length ? { ok: false, issues } : { ok: true, data };
@@ -442,13 +442,13 @@ function validateGroupOrder(body: JsonRecord): ValidationResult<GroupOrderData> 
       body,
       "orderAcknowledgement",
       issues,
-      "Acknowledge that Omala will confirm the quote and fulfillment details.",
+      "Acknowledge that Ekoraa will confirm the quote and fulfillment details.",
     ),
     serviceContactConsent: requiredConfirmation(
       body,
       "serviceContactConsent",
       issues,
-      "Consent is required so Omala can contact you about this request.",
+      "Consent is required so Ekoraa can contact you about this request.",
     ),
   };
   return issues.length ? { ok: false, issues } : { ok: true, data };
@@ -467,7 +467,7 @@ function validateContact(body: JsonRecord): ValidationResult<ContactData> {
       body,
       "serviceContactConsent",
       issues,
-      "Consent is required so Omala can reply to your message.",
+      "Consent is required so Ekoraa can reply to your message.",
     ),
   };
   return issues.length ? { ok: false, issues } : { ok: true, data };

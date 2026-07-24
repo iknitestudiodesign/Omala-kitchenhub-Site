@@ -1,6 +1,6 @@
-# Omala Kitchen Hub
+# Ekoraa Kitchen Hub
 
-Public, mobile-first website for the Omala Kitchen Hub pilot in Buea, Cameroon.
+Public, mobile-first website for the Ekoraa Kitchen Hub pilot in Buea, Cameroon.
 The site explains the service to kitchens and customers, accepts order and
 partner requests, records channel-specific marketing permission, and forwards
 validated submissions to dedicated GoHighLevel inbound workflows.
@@ -74,7 +74,7 @@ Manager loads only when both a valid `NEXT_PUBLIC_GTM_ID` and
 `NEXT_PUBLIC_ANALYTICS_CONSENT_APPROVED=true` are supplied after the tracking
 and consent configuration has been approved.
 
-The official Omala Kitchen SVG identity and optimized supplied photography are
+The official Ekoraa Kitchen SVG identity and optimized supplied photography are
 included in the repository. See `docs/asset-sources.md` for provenance and
 usage notes. Before public launch, verify the public WhatsApp number and site
 URL, reauthenticate GHL, test every workflow, and have the pilot legal pages

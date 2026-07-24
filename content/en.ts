@@ -1,6 +1,6 @@
 export const enContent = {
-  brand: "Omala Kitchen Hub",
-  shortBrand: "Omala",
+  brand: "Ekoraa Kitchen Hub",
+  shortBrand: "Ekoraa",
   serviceArea: "Buea, Cameroon",
   navigation: [
     { href: "/for-kitchens", label: "For kitchens" },
@@ -16,10 +16,10 @@ export const enContent = {
   },
   promise: {
     eyebrow: "The customer and order desk for growing kitchens",
-    title: "You cook. Omala handles the customers and orders.",
+    title: "You cook. Ekoraa handles the customers and orders.",
     titleParts: {
       lead: "You cook. ",
-      accent: "Omala",
+      accent: "Ekoraa",
       rest: " handles the customers and orders.",
     },
     description:
@@ -28,84 +28,84 @@ export const enContent = {
   pages: {
     home: {
       metadata: {
-        title: "Omala Kitchen Hub | You cook. We handle the customers.",
+        title: "Ekoraa Kitchen Hub | You cook. We handle the customers.",
         description:
-          "Omala Kitchen Hub handles customer communication and order coordination for growing kitchens in Buea, Cameroon.",
+          "Ekoraa Kitchen Hub handles customer communication and order coordination for growing kitchens in Buea, Cameroon.",
       },
     },
     forKitchens: {
       metadata: {
         title: "For Kitchens",
         description:
-          "See how Omala handles customer communication and order coordination for growing kitchens in Buea, and apply for the one-month pilot.",
+          "See how Ekoraa handles customer communication and order coordination for growing kitchens in Buea, and apply for the one-month pilot.",
       },
       hero: {
         eyebrow: "For small and growing kitchens",
         title: "Grow the customer side without carrying it all yourself.",
         description:
-          "Omala takes on the daily communication and order coordination that interrupts your kitchen—so you can stay close to the food, your team and the quality customers remember.",
+          "Ekoraa takes on the daily communication and order coordination that interrupts your kitchen—so you can stay close to the food, your team and the quality customers remember.",
       },
     },
     howItWorks: {
       metadata: {
         title: "How It Works",
         description:
-          "See how Omala supports kitchens and customers from first message to confirmed order and follow-up.",
+          "See how Ekoraa supports kitchens and customers from first message to confirmed order and follow-up.",
       },
       hero: {
-        eyebrow: "How Omala works",
+        eyebrow: "How Ekoraa works",
         title: "One organised bridge between the customer and the kitchen.",
         description:
-          "Omala does not replace the kitchen. We make the communication and order handoff clearer so the kitchen can prepare with confidence and the customer knows what happens next.",
+          "Ekoraa does not replace the kitchen. We make the communication and order handoff clearer so the kitchen can prepare with confidence and the customer knows what happens next.",
       },
     },
     order: {
       metadata: {
         title: "Start an Order",
         description:
-          "Ask for today’s menu or start a food order request with Omala Kitchen Hub in Buea.",
+          "Ask for today’s menu or start a food order request with Ekoraa Kitchen Hub in Buea.",
       },
       hero: {
-        eyebrow: "Order through Omala",
+        eyebrow: "Order through Ekoraa",
         title: "Tell us what you need. We’ll confirm the live details.",
         description:
-          "Ask for today’s menu or start with the meal you have in mind. Omala checks availability, price and fulfilment before anything becomes a confirmed order.",
+          "Ask for today’s menu or start with the meal you have in mind. Ekoraa checks availability, price and fulfilment before anything becomes a confirmed order.",
       },
     },
     groupOrders: {
       metadata: {
         title: "Group Orders",
         description:
-          "Request a coordinated office, team or event meal order in Buea through Omala Kitchen Hub.",
+          "Request a coordinated office, team or event meal order in Buea through Ekoraa Kitchen Hub.",
       },
       hero: {
         eyebrow: "Office, team & event meals",
         title: "One coordinated request for everyone at the table.",
         description:
-          "Tell Omala the headcount, timing, location and meal direction. We will check the right kitchen, prepare a clear quote and confirm one fulfilment plan.",
+          "Tell Ekoraa the headcount, timing, location and meal direction. We will check the right kitchen, prepare a clear quote and confirm one fulfilment plan.",
       },
     },
     about: {
       metadata: {
-        title: "About Omala",
+        title: "About Ekoraa",
         description:
-          "Why Omala Kitchen Hub is building a better customer and order desk for growing kitchens in Buea.",
+          "Why Ekoraa Kitchen Hub is building a better customer and order desk for growing kitchens in Buea.",
       },
       hero: {
-        eyebrow: "About Omala Kitchen Hub",
+        eyebrow: "About Ekoraa Kitchen Hub",
         title: "A local operating model for kitchens that deserve room to grow.",
         description:
-          "Omala exists because many talented kitchens are doing two jobs at once: making the food and carrying every customer conversation. We are building the support layer between those worlds.",
+          "Ekoraa exists because many talented kitchens are doing two jobs at once: making the food and carrying every customer conversation. We are building the support layer between those worlds.",
       },
     },
     faq: {
       metadata: {
         title: "Frequently Asked Questions",
-        description: "Answers for customers and kitchens using the Omala Kitchen Hub pilot.",
+        description: "Answers for customers and kitchens using the Ekoraa Kitchen Hub pilot.",
       },
       hero: {
         eyebrow: "Questions, answered plainly",
-        title: "Know what Omala does—and what still needs confirmation.",
+        title: "Know what Ekoraa does—and what still needs confirmation.",
         description:
           "The first pilot is intentionally clear about orders, payments, delivery, kitchen responsibilities and customer permission.",
       },
@@ -114,10 +114,10 @@ export const enContent = {
       metadata: {
         title: "Contact",
         description:
-          "Contact Omala Kitchen Hub about an order, kitchen pilot, group meal or privacy request.",
+          "Contact Ekoraa Kitchen Hub about an order, kitchen pilot, group meal or privacy request.",
       },
       hero: {
-        eyebrow: "Contact Omala",
+        eyebrow: "Contact Ekoraa",
         title: "Tell us what you need help with.",
         description:
           "Use this page for order questions, kitchen applications, partnerships or data and marketing requests. We will route the message to the right next step.",
@@ -126,7 +126,7 @@ export const enContent = {
     joinUpdates: {
       metadata: {
         title: "Get Menus and Updates",
-        description: "Choose how you want to receive optional Omala menus and offers.",
+        description: "Choose how you want to receive optional Ekoraa menus and offers.",
       },
       hero: {
         eyebrow: "Menus and optional updates",
@@ -138,45 +138,45 @@ export const enContent = {
     marketingPreferences: {
       metadata: {
         title: "Marketing Preferences",
-        description: "Update or withdraw your Omala marketing permissions.",
+        description: "Update or withdraw your Ekoraa marketing permissions.",
       },
       hero: {
         eyebrow: "Your marketing choices",
         title: "Update the channels—or stop them all.",
         description:
-          "Use the phone number that received Omala messages. This form changes optional promotion permissions; it does not cancel an active order or block necessary service communication.",
+          "Use the phone number that received Ekoraa messages. This form changes optional promotion permissions; it does not cancel an active order or block necessary service communication.",
       },
     },
     privacy: {
       metadata: {
         title: "Privacy Notice",
         description:
-          "How Omala Kitchen Hub handles website, order and kitchen-pilot information.",
+          "How Ekoraa Kitchen Hub handles website, order and kitchen-pilot information.",
       },
       hero: {
         eyebrow: "Pilot privacy notice · Updated July 16, 2026",
         title: "Your information should have a clear purpose.",
         description:
-          "This notice explains the information Omala collects through the pilot website, why it is used and how to exercise your choices. Final production wording remains subject to Cameroon legal review.",
+          "This notice explains the information Ekoraa collects through the pilot website, why it is used and how to exercise your choices. Final production wording remains subject to Cameroon legal review.",
       },
     },
     terms: {
       metadata: {
         title: "Website Terms",
-        description: "Pilot website terms for Omala Kitchen Hub.",
+        description: "Pilot website terms for Ekoraa Kitchen Hub.",
       },
       hero: {
         eyebrow: "Pilot website terms · Updated July 16, 2026",
         title: "Clear expectations for a service still being proven.",
         description:
-          "These terms govern the Omala pilot website and request flows. Final production terms remain subject to Cameroon legal review.",
+          "These terms govern the Ekoraa pilot website and request flows. Final production terms remain subject to Cameroon legal review.",
       },
     },
     orderPolicy: {
       metadata: {
         title: "Order and Cancellation Policy",
         description:
-          "How Omala order requests, confirmations, payment and cancellations work during the Buea pilot.",
+          "How Ekoraa order requests, confirmations, payment and cancellations work during the Buea pilot.",
       },
       hero: {
         eyebrow: "Pilot order policy · Updated July 16, 2026",
@@ -189,13 +189,13 @@ export const enContent = {
       metadata: {
         title: "Marketing Notice",
         description:
-          "How Omala requests and records permission for menus, offers and promotional messages.",
+          "How Ekoraa requests and records permission for menus, offers and promotional messages.",
       },
       hero: {
         eyebrow: "Marketing notice · Updated July 16, 2026",
         title: "Menus and offers should arrive because you chose them.",
         description:
-          "This notice describes optional Omala promotions. It does not apply to messages needed to answer, confirm or support your active request.",
+          "This notice describes optional Ekoraa promotions. It does not apply to messages needed to answer, confirm or support your active request.",
       },
     },
     kitchenProfile: {
@@ -203,7 +203,7 @@ export const enContent = {
         notFoundTitle: "Kitchen Not Found",
       },
       hero: {
-        verifiedEyebrow: "Verified Omala kitchen",
+        verifiedEyebrow: "Verified Ekoraa kitchen",
         pilotEyebrow: "Pilot kitchen",
       },
     },

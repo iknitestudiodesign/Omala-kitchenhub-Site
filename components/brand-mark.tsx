@@ -6,11 +6,11 @@ export function BrandMark({ inverse = false }: { inverse?: boolean }) {
     <Link
       href="/"
       className={`brand-mark${inverse ? " brand-mark--inverse" : ""}`}
-      aria-label="Omala Kitchen Hub home"
+      aria-label="Ekoraa Kitchen Hub home"
     >
       <Image
         className="brand-logo"
-        src="/brand/omala-kitchen-lockup-wide.svg"
+        src="/brand/ekoraa-kitchen-lockup-wide.svg"
         alt=""
         width={1309}
         height={464}
@@ -25,7 +25,7 @@ export function BrandIcon({ className = "" }: { className?: string }) {
   return (
     <Image
       className={`brand-icon${className ? ` ${className}` : ""}`}
-      src="/brand/omala-kitchen-logomark.svg"
+      src="/brand/ekoraa-kitchen-logomark.svg"
       alt=""
       width={385}
       height={464}

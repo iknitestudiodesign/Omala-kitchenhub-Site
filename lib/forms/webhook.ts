@@ -49,8 +49,8 @@ export async function forwardToGhl(
       method: "POST",
       headers: {
         "content-type": "application/json",
-        "x-omala-submission-id": envelope.submissionId,
-        "x-omala-receipt-id": envelope.receiptId,
+        "x-ekoraa-submission-id": envelope.submissionId,
+        "x-ekoraa-receipt-id": envelope.receiptId,
       },
       body: JSON.stringify(envelope),
       signal: controller.signal,

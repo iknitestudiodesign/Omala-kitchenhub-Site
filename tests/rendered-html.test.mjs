@@ -21,7 +21,7 @@ test("server-renders the finished homepage without starter markers", async () =>
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /Omala Kitchen Hub/i);
+  assert.match(html, /Ekoraa Kitchen Hub/i);
   assert.match(html, /You cook/i);
   assert.match(html, /Start an order/i);
   assert.match(html, /Apply as a kitchen/i);

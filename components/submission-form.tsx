@@ -141,7 +141,7 @@ export function SubmissionForm({
         submissionError instanceof Error
           ? submissionError.message
           : "We could not send this yet. Please try again.";
-      setError(`${message} You can retry, or contact Omala for help.`);
+      setError(`${message} You can retry, or contact Ekoraa for help.`);
       setSubmitting(false);
     }
   }
@@ -167,7 +167,7 @@ export function SubmissionForm({
         ) : null}
         {error ? (
           <p className="form-status form-status--error" role="alert">
-            {error} <a href="/contact">Contact Omala</a>.
+            {error} <a href="/contact">Contact Ekoraa</a>.
           </p>
         ) : null}
         <div className="form-submit-row">

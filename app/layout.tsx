@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteCopy.pages.home.metadata.title,
-    template: "%s | Omala Kitchen Hub",
+    template: "%s | Ekoraa Kitchen Hub",
   },
   description: siteConfig.description,
   keywords: [
@@ -23,21 +23,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_CM",
-    title: "Omala Kitchen Hub",
+    title: "Ekoraa Kitchen Hub",
     description: siteConfig.description,
-    siteName: "Omala Kitchen Hub",
+    siteName: "Ekoraa Kitchen Hub",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Omala Kitchen Hub — You cook. We handle the customers and orders.",
+        alt: "Ekoraa Kitchen Hub — You cook. We handle the customers and orders.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Omala Kitchen Hub",
+    title: "Ekoraa Kitchen Hub",
     description: siteConfig.description,
     images: ["/og.png"],
   },
@@ -53,9 +53,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Omala Kitchen Hub",
+    name: "Ekoraa Kitchen Hub",
     url: siteConfig.url,
-    logo: `${siteConfig.url}/brand/omala-kitchen-lockup-wide.svg`,
+    logo: `${siteConfig.url}/brand/ekoraa-kitchen-lockup-wide.svg`,
     areaServed: {
       "@type": "City",
       name: "Buea",

@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import type { ComponentProps, MouseEvent } from "react";
-import { trackEvent, type OmalaEvent } from "@/lib/analytics";
+import { trackEvent, type EkoraaEvent } from "@/lib/analytics";
 
 type TrackedLinkProps = ComponentProps<typeof Link> & {
-  eventName: OmalaEvent;
+  eventName: EkoraaEvent;
   eventContext?: string;
 };
 

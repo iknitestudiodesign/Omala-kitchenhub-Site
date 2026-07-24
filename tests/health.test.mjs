@@ -4,7 +4,7 @@ import test from "node:test";
 import { isProductionReady } from "../lib/health.ts";
 
 const readyEnvironment = {
-  NEXT_PUBLIC_SITE_URL: "https://omala.example",
+  NEXT_PUBLIC_SITE_URL: "https://ekoraa.example",
   NEXT_PUBLIC_WHATSAPP_NUMBER: "237677123456",
   NEXT_PUBLIC_TURNSTILE_SITE_KEY: "public-key",
   TURNSTILE_SECRET_KEY: "secret-key",
@@ -23,7 +23,7 @@ test("production readiness requires every launch-critical integration", () => {
 });
 
 test("production readiness rejects unsafe public and webhook URLs", () => {
-  assert.equal(isProductionReady({ ...readyEnvironment, NEXT_PUBLIC_SITE_URL: "http://omala.example" }), false);
+  assert.equal(isProductionReady({ ...readyEnvironment, NEXT_PUBLIC_SITE_URL: "http://ekoraa.example" }), false);
   assert.equal(
     isProductionReady({ ...readyEnvironment, GHL_CONTACT_WEBHOOK_URL: "http://localhost:4000/hook" }),
     false,
