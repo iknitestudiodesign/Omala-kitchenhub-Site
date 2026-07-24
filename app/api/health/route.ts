@@ -6,7 +6,7 @@ export async function GET(): Promise<Response> {
   return new Response(
     JSON.stringify({
       ok: true,
-      service: "omala-kitchen-hub",
+      service: "ekoraa-kitchen-hub",
       ready,
       ...(ready ? {} : { status: "configuration_required" }),
     }),

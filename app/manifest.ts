@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Omala Kitchen Hub",
-    short_name: "Omala",
+    name: "Ekoraa Kitchen Hub",
+    short_name: "Ekoraa",
     description: "Customer communication and order coordination for growing kitchens in Buea.",
     start_url: "/",
     display: "standalone",

@@ -23,7 +23,7 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
   const query = await searchParams;
   const selectedKitchen = kitchens.some((kitchen) => kitchen.slug === query.kitchen)
     ? query.kitchen
-    : "Let Omala match my request";
+    : "Let Ekoraa match my request";
   return (
     <>
       <PageHero
@@ -38,7 +38,7 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
           <ul className="aside-list">
             <li><MessageCircleMore size={18} /> Choose “send today’s menu” if you are still deciding.</li>
             <li><HandCoins size={18} /> No payment information is collected on this website.</li>
-            <li><PackageCheck size={18} /> Your order is final only after Omala confirms the total and fulfilment.</li>
+            <li><PackageCheck size={18} /> Your order is final only after Ekoraa confirms the total and fulfilment.</li>
           </ul>
         }
       />
@@ -53,7 +53,7 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
           />
           <div className="content-grid-3" style={{ marginTop: 46 }}>
             <article className="content-card"><span className="icon-tile"><ShoppingBag size={22} /></span><h3>1. Share the request</h3><p>Tell us the meal, quantity, preferred time and where it needs to go.</p></article>
-            <article className="content-card"><span className="icon-tile icon-tile--warm"><Clock3 size={22} /></span><h3>2. We check live details</h3><p>Omala confirms availability, final price and the delivery or pickup plan.</p></article>
+            <article className="content-card"><span className="icon-tile icon-tile--warm"><Clock3 size={22} /></span><h3>2. We check live details</h3><p>Ekoraa confirms availability, final price and the delivery or pickup plan.</p></article>
             <article className="content-card"><span className="icon-tile"><CheckCircle2 size={22} /></span><h3>3. You confirm</h3><p>Only then do you receive payment instructions and a confirmed fulfilment plan.</p></article>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
             <SectionIntro
               eyebrow="Phone-first by design"
               title="Start in seconds. Confirm with a person."
-              description="The phone gets your request moving; Omala checks the changing details before asking you to commit or pay."
+              description="The phone gets your request moving; Ekoraa checks the changing details before asking you to commit or pay."
             />
             <ul className="plain-checks">
               <li><CheckCircle2 size={18} /> Ask for the current menu when you are still deciding</li>
@@ -95,9 +95,9 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
                 <h3>Pilot kitchen profiles are being verified.</h3>
                 <p>
                   We do not publish a kitchen until its name, service details and
-                  availability are confirmed. You can still submit a request and let Omala match it.
+                  availability are confirmed. You can still submit a request and let Ekoraa match it.
                 </p>
-                <a className="button button--outline" href="#order-form">Let Omala help</a>
+                <a className="button button--outline" href="#order-form">Let Ekoraa help</a>
               </div>
             </div>
           )}
@@ -137,7 +137,7 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
                 <label className="field">
                   <span>Kitchen preference <em>*</em></span>
                   <select name="kitchenPreference" defaultValue={selectedKitchen} required>
-                    <option>Let Omala match my request</option>
+                    <option>Let Ekoraa match my request</option>
                     {kitchens.map((kitchen) => <option key={kitchen.slug} value={kitchen.slug}>{kitchen.name}</option>)}
                   </select>
                 </label>
@@ -209,8 +209,8 @@ export default async function OrderPage({ searchParams }: { searchParams: Promis
             <div className="consent-block">
               <h3>Order communication and optional updates</h3>
               <p>Order messages are needed to complete this request. Future promotions are optional.</p>
-              <label className="check-row check-row--required"><input type="checkbox" name="orderAcknowledgement" value="true" required /><span>I understand this becomes an order only after Omala confirms availability, total price and fulfilment. *</span></label>
-              <label className="check-row check-row--required"><input type="checkbox" name="serviceContactConsent" value="true" required /><span>Omala may contact me about this order request by phone or messaging. *</span></label>
+              <label className="check-row check-row--required"><input type="checkbox" name="orderAcknowledgement" value="true" required /><span>I understand this becomes an order only after Ekoraa confirms availability, total price and fulfilment. *</span></label>
+              <label className="check-row check-row--required"><input type="checkbox" name="serviceContactConsent" value="true" required /><span>Ekoraa may contact me about this order request by phone or messaging. *</span></label>
               <label className="check-row"><input type="checkbox" name="consentMarketingWhatsApp" value="true" /><span>Also send me optional menus and offers by WhatsApp.</span></label>
               <label className="check-row"><input type="checkbox" name="consentMarketingSms" value="true" /><span>Also send me optional menus and offers by SMS.</span></label>
               <label className="check-row"><input type="checkbox" name="consentMarketingEmail" value="true" /><span>Also send me optional menus and offers by email.</span></label>

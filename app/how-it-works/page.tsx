@@ -19,9 +19,9 @@ export const metadata: Metadata = siteCopy.pages.howItWorks.metadata;
 
 const kitchenSteps = [
   ["Share the operating picture", "The kitchen provides its current menu rhythm, service hours, pricing, fulfilment rules and lawful customer sources."],
-  ["Set one clear order flow", "Omala configures the information every request needs: meal, quantity, timing, location, preferences and confirmation status."],
+  ["Set one clear order flow", "Ekoraa configures the information every request needs: meal, quantity, timing, location, preferences and confirmation status."],
   ["Communicate consistently", "Approved menus and reminders go out through the agreed channels while incoming questions are organised."],
-  ["Confirm before cooking", "The kitchen confirms current availability and timing before Omala gives the customer a final total and next step."],
+  ["Confirm before cooking", "The kitchen confirms current availability and timing before Ekoraa gives the customer a final total and next step."],
   ["Keep everyone updated", "The customer receives service updates while the kitchen can stay focused on preparation and fulfilment."],
   ["Review what happened", "Weekly reporting separates messages sent, customers engaged and customers who actually purchased."],
 ];
@@ -41,14 +41,14 @@ export default function HowItWorksPage() {
             <span className="icon-tile"><ShoppingBag size={22} /></span>
             <span className="eyebrow" style={{ marginTop: 30 }}>For customers</span>
             <h2>Request, confirm, then commit.</h2>
-            <p>You share the meal, time and location. Omala checks the live offer with the kitchen and sends the confirmed total and fulfilment plan.</p>
+            <p>You share the meal, time and location. Ekoraa checks the live offer with the kitchen and sends the confirmed total and fulfilment plan.</p>
             <Link className="button button--ink" href="#customer-flow">Follow the customer flow</Link>
           </article>
           <article className="audience-card audience-card--kitchen">
             <div className="audience-icon"><ChefHat size={32} /></div>
             <span className="eyebrow eyebrow--light">For kitchens</span>
             <h2>Cook, update, fulfil.</h2>
-            <p>You stay responsible for menu truth, food quality and fulfilment. Omala carries the repetitive communication around it.</p>
+            <p>You stay responsible for menu truth, food quality and fulfilment. Ekoraa carries the repetitive communication around it.</p>
             <Link className="button button--cream" href="#kitchen-flow">Follow the kitchen flow</Link>
           </article>
         </div>
@@ -56,7 +56,7 @@ export default function HowItWorksPage() {
 
       <section className="content-section" id="kitchen-flow">
         <div className="shell">
-          <SectionIntro eyebrow="The kitchen journey" title="From an honest fit check to a measurable one-month pilot." description="The first goal is not scale. It is a working routine that the kitchen can fulfil and Omala can support well." />
+          <SectionIntro eyebrow="The kitchen journey" title="From an honest fit check to a measurable one-month pilot." description="The first goal is not scale. It is a working routine that the kitchen can fulfil and Ekoraa can support well." />
           <div className="timeline">
             {kitchenSteps.map(([title, description], index) => <article className="timeline-card" key={title}><span>{String(index + 1).padStart(2, "0")}</span><h3>{title}</h3><p>{description}</p></article>)}
           </div>
@@ -78,7 +78,7 @@ export default function HowItWorksPage() {
                 height={948}
               />
               <p className="media-caption">
-                Illustrative photo. Omala v1 begins with a request and a human confirmation, not live website checkout.
+                Illustrative photo. Ekoraa v1 begins with a request and a human confirmation, not live website checkout.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function HowItWorksPage() {
             {[
               [MessageCircleMore, "1. Ask or choose", "Request today’s menu or describe the meal you have in mind."],
               [ClipboardCheck, "2. Add useful details", "Share quantity, timing, neighborhood, landmark and fulfilment preference."],
-              [CheckCircle2, "3. Receive confirmation", "Omala checks availability and sends the final price and fulfilment plan."],
+              [CheckCircle2, "3. Receive confirmation", "Ekoraa checks availability and sends the final price and fulfilment plan."],
               [PackageCheck, "4. Get service updates", "Once confirmed, updates continue through the agreed service channel."],
             ].map(([Icon, title, text]) => { const C = Icon as typeof MessageCircleMore; return <article className="content-card" key={String(title)}><span className="icon-tile"><C size={22} /></span><h3>{String(title)}</h3><p>{String(text)}</p></article>; })}
           </div>
@@ -97,7 +97,7 @@ export default function HowItWorksPage() {
         <div className="shell content-grid-3">
           <article className="content-card"><span className="icon-tile"><ShieldCheck size={22} /></span><h3>Consent stays specific</h3><p>Service messages and optional marketing are separated by channel, with no pre-checked promotional choices.</p></article>
           <article className="content-card"><span className="icon-tile icon-tile--warm"><MessageCircleMore size={22} /></span><h3>Automation stays responsible</h3><p>The experience leads with useful service—not technology—and the privacy notice accurately explains processing.</p></article>
-          <article className="content-card"><span className="icon-tile"><BarChart3 size={22} /></span><h3>Results stay honest</h3><p>Omala measures sent, engaged and purchased instead of treating every message as a sale.</p></article>
+          <article className="content-card"><span className="icon-tile"><BarChart3 size={22} /></span><h3>Results stay honest</h3><p>Ekoraa measures sent, engaged and purchased instead of treating every message as a sale.</p></article>
         </div>
       </section>
 
