@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">Ekoraa Kitchen Hub horizontal logo</title>
+  <desc id="desc">Ekoraa Kitchen Hub wordmark with green icon and orange accent.</desc>
+  <defs>
+    <style>
+      .green{fill:#8dd122}.dark{fill:#10150d}.accent{fill:#f9a865}.cream{fill:#fffefb}
+    </style>
+  </defs>
+  <rect class="cream" width="720" height="180" rx="34"/>
+  <g transform="translate(31 30)">
+    <path class="green" d="M102.1 28.9c-2.2-6-6.6-5.7-20.8-15.6C64.6 1.5 63.8-3.9 57.2-3.6 48.4-3.2 48.1 6.7 33 15.7 19.3 23.8 11.6 20.5 7.9 27.4 4 34.7 11.9 39.6 12.7 55.9c.8 16.9-7.2 22.4-2.6 30.3 4 6.9 10.8 3.6 24.9 12.2 14 8.6 14 15.9 22.9 17 2 .2 5.6.3 24.9-11.5 15.4-9.5 23.1-14.4 24.4-19.3 2.6-10.2-9.1-14.2-9.5-29.8-.3-13.3 7.9-17.2 4.4-25.9Z" transform="translate(0 7) scale(1.03)"/>
+    <path class="cream" d="m87.2 61.4-4.3-57.5C82.5-1.3 76.2-3.7 72.5-.1L30.8 39.8C13.1 56.7 19 86.3 41.9 95.1c22.9 8.8 47.1-9.2 45.3-33.7Z" transform="translate(0 7) scale(1.03)"/>
+    <circle class="green" cx="59.2" cy="73.2" r="22.4"/>
+  </g>
+  <g transform="translate(172 53)">
+    <text class="dark" x="0" y="62" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" letter-spacing="-3">ekoraa</text>
+    <text class="accent" x="3" y="99" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" letter-spacing="4">KITCHEN HUB</text>
+  </g>
+</svg>

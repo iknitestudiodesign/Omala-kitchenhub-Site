@@ -10,10 +10,10 @@ export function BrandMark({ inverse = false }: { inverse?: boolean }) {
     >
       <Image
         className="brand-logo"
-        src="/brand/ekoraa-kitchen-lockup-wide.svg"
+        src="/brand/ekoraa-logo-horizontal.svg"
         alt=""
-        width={1309}
-        height={464}
+        width={720}
+        height={180}
         priority
         unoptimized
       />
