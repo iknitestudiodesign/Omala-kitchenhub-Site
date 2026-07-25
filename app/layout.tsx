@@ -55,7 +55,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     "@type": "Organization",
     name: "Ekoraa Kitchen Hub",
     url: siteConfig.url,
-    logo: `${siteConfig.url}/brand/ekoraa-logo-horizontal.svg`,
+    logo: `${siteConfig.url}/brand/ekoraa-kitchen-lockup-wide.svg`,
     areaServed: {
       "@type": "City",
       name: "Buea",
