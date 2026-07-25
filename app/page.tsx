@@ -135,7 +135,7 @@ export default function Home() {
           />
           <p className="lead-note">
             When every menu, address, preference and follow-up lives in a
-            different conversation, growth feels like more noise. Omala turns
+            different conversation, growth feels like more noise. Ekoraa turns
             that noise into a simple, repeatable order flow.
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="shell">
           <SectionIntro
             eyebrow="A clear partnership"
-            title="Omala runs the customer desk. Your kitchen stays in control of the food."
+            title="Ekoraa runs the customer desk. Your kitchen stays in control of the food."
             description="No vague promises. Everyone knows what they own from the first day of the pilot."
             align="center"
           />
@@ -170,13 +170,13 @@ export default function Home() {
             <article className="responsibility-card responsibility-card--green">
               <div className="responsibility-title">
                 <BrandIcon />
-                <div><small>Omala handles</small><h3>The customer side</h3></div>
+                <div><small>Ekoraa handles</small><h3>The customer side</h3></div>
               </div>
               <ul className="check-list check-list--light">
                 {handledItems.map((item) => <li key={item}><Check size={16} />{item}</li>)}
               </ul>
               <Link href="/how-it-works" className="card-link card-link--light">
-                Follow the Omala flow <ArrowRight size={16} />
+                Follow the Ekoraa flow <ArrowRight size={16} />
               </Link>
             </article>
             <article className="responsibility-card responsibility-card--sand">
@@ -209,16 +209,16 @@ export default function Home() {
           </div>
           <div className="number-steps">
             <NumberStep number="01" title="Share what is available">
-              The kitchen gives Omala the current menu, prices, service times and fulfilment rules.
+              The kitchen gives Ekoraa the current menu, prices, service times and fulfilment rules.
             </NumberStep>
             <NumberStep number="02" title="Bring customers into one flow">
-              Omala shares menus, answers initial questions and collects complete order details.
+              Ekoraa shares menus, answers initial questions and collects complete order details.
             </NumberStep>
             <NumberStep number="03" title="Confirm before anyone commits">
               The kitchen confirms availability; the customer receives the total and fulfilment details.
             </NumberStep>
             <NumberStep number="04" title="Follow through and learn">
-              Omala keeps the customer updated, requests feedback and organises useful order history.
+              Ekoraa keeps the customer updated, requests feedback and organises useful order history.
             </NumberStep>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function Home() {
           <article className="audience-card audience-card--kitchen">
             <div className="audience-icon"><ChefHat size={33} /></div>
             <span className="eyebrow eyebrow--light">For kitchens</span>
-            <h2>Try a focused one-month Omala pilot.</h2>
+            <h2>Try a focused one-month Ekoraa pilot.</h2>
             <p>
               We set up the customer and order workflow around the way your
               kitchen already works, then review the real results together.

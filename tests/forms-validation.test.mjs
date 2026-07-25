@@ -98,7 +98,7 @@ test("requires an email address when email marketing is selected", () => {
     customerName: "Nadine E.",
     phone: "650111222",
     requestType: "today-menu",
-    kitchenPreference: "Let Omala match my request",
+    kitchenPreference: "Let Ekoraa match my request",
     requestedItems: "Today's menu",
     quantity: 1,
     fulfillmentMode: "delivery",
@@ -146,7 +146,7 @@ test("captures independently checked marketing channels on a service submission"
     customerName: "Nadine E.",
     phone: "650111222",
     requestType: "today-menu",
-    kitchenPreference: "Let Omala match my request",
+    kitchenPreference: "Let Ekoraa match my request",
     requestedItems: "Today's menu",
     quantity: 1,
     fulfillmentMode: "Delivery",
@@ -169,7 +169,7 @@ test("captures independently checked marketing channels on a service submission"
       consentMarketingSms: "On",
       consentMarketingEmail: "yes",
     },
-    { url: "https://omala.example/api/forms/order-request", headers: new Headers() },
+    { url: "https://ekoraa.example/api/forms/order-request", headers: new Headers() },
     {
       consentTextVersion: "consent-v3",
       now: new Date("2026-07-16T12:00:00.000Z"),
@@ -201,7 +201,7 @@ test("leaves omitted optional marketing channels unchecked on a service submissi
     "contact",
     validated.data,
     {},
-    { url: "https://omala.example/api/forms/contact", headers: new Headers() },
+    { url: "https://ekoraa.example/api/forms/contact", headers: new Headers() },
     {
       consentTextVersion: "consent-v3",
       now: new Date("2026-07-16T12:00:00.000Z"),
@@ -257,8 +257,8 @@ test("builds a server-owned envelope with safe attribution and routing", () => {
       utmSource: " launch\u0000-campaign ",
     },
     {
-      url: "https://omala.example/api/forms/marketing-preferences",
-      headers: new Headers({ referer: "https://omala.example/join-updates" }),
+      url: "https://ekoraa.example/api/forms/marketing-preferences",
+      headers: new Headers({ referer: "https://ekoraa.example/join-updates" }),
     },
     {
       consentTextVersion: "consent-v3",
@@ -268,7 +268,7 @@ test("builds a server-owned envelope with safe attribution and routing", () => {
   );
 
   assert.equal(envelope.receiptId, "OML-123456781234");
-  assert.equal(envelope.sourceUrl, "https://omala.example/join-updates");
+  assert.equal(envelope.sourceUrl, "https://ekoraa.example/join-updates");
   assert.equal(envelope.language, "fr");
   assert.equal(envelope.utm.source, "launch-campaign");
   assert.equal(envelope.consentTextVersion, "consent-v3");
@@ -302,7 +302,7 @@ test("does not accept an off-site URL as consent provenance", () => {
     "contact",
     validated.data,
     { sourceUrl: "https://untrusted.example/fake-source" },
-    { url: "https://omala.example/api/forms/contact", headers: new Headers() },
+    { url: "https://ekoraa.example/api/forms/contact", headers: new Headers() },
     {
       consentTextVersion: "consent-v3",
       now: new Date("2026-07-16T12:00:00.000Z"),
@@ -310,7 +310,7 @@ test("does not accept an off-site URL as consent provenance", () => {
     },
   );
 
-  assert.equal(envelope.sourceUrl, "https://omala.example");
+  assert.equal(envelope.sourceUrl, "https://ekoraa.example");
 });
 
 test("source provenance keeps attribution but strips unrelated query details", () => {
@@ -329,9 +329,9 @@ test("source provenance keeps attribution but strips unrelated query details", (
     validated.data,
     {},
     {
-      url: "https://omala.example/api/forms/contact",
+      url: "https://ekoraa.example/api/forms/contact",
       headers: new Headers({
-        referer: "https://omala.example/contact?utm_source=office-list&phone=677123456#private",
+        referer: "https://ekoraa.example/contact?utm_source=office-list&phone=677123456#private",
       }),
     },
     {
@@ -341,7 +341,7 @@ test("source provenance keeps attribution but strips unrelated query details", (
     },
   );
 
-  assert.equal(envelope.sourceUrl, "https://omala.example/contact?utm_source=office-list");
+  assert.equal(envelope.sourceUrl, "https://ekoraa.example/contact?utm_source=office-list");
   assert.equal(envelope.utm.source, "office-list");
   assert.doesNotMatch(envelope.sourceUrl, /phone|677123456|private/);
 });
@@ -359,7 +359,7 @@ test("records the explicit withdrawal time in the consent audit", () => {
     "marketing-preferences",
     validated.data,
     {},
-    { url: "https://omala.example/api/forms/marketing-preferences", headers: new Headers() },
+    { url: "https://ekoraa.example/api/forms/marketing-preferences", headers: new Headers() },
     {
       consentTextVersion: "consent-v3",
       now: new Date("2026-07-16T15:30:00.000Z"),

@@ -5,7 +5,7 @@ import { TrackedAnchor } from "./tracked-anchor";
 import { whatsappHref } from "@/lib/site";
 
 export function SiteFooter() {
-  const whatsapp = whatsappHref("Hello Omala, I would like to learn more.");
+  const whatsapp = whatsappHref("Hello Ekoraa, I would like to learn more.");
 
   return (
     <footer className="site-footer">
@@ -25,11 +25,11 @@ export function SiteFooter() {
           <Link href="/how-it-works">How it works</Link>
           <Link href="/order">Order food</Link>
           <Link href="/group-orders">Group orders</Link>
-          <Link href="/about">About Omala</Link>
+          <Link href="/about">About Ekoraa</Link>
         </div>
         <div>
           <h2>For kitchens</h2>
-          <Link href="/for-kitchens">Why Omala</Link>
+          <Link href="/for-kitchens">Why Ekoraa</Link>
           <Link href="/for-kitchens#expect">What to expect</Link>
           <Link href="/for-kitchens#apply">Apply for the pilot</Link>
           <Link href="/faq">Questions</Link>
@@ -39,7 +39,7 @@ export function SiteFooter() {
           <Link href="/join-updates">Get menus & updates</Link>
           {whatsapp ? (
             <TrackedAnchor href={whatsapp} target="_blank" rel="noreferrer" eventName="whatsapp_click" eventContext="footer">
-              WhatsApp Omala <ArrowUpRight size={14} aria-hidden="true" />
+              WhatsApp Ekoraa <ArrowUpRight size={14} aria-hidden="true" />
             </TrackedAnchor>
           ) : null}
           <Link href="/contact">Contact us</Link>
@@ -47,7 +47,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="shell footer-bottom">
-        <span>© {new Date().getFullYear()} Omala Kitchen Hub</span>
+        <span>© {new Date().getFullYear()} Ekoraa Kitchen Hub</span>
         <nav aria-label="Legal">
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>

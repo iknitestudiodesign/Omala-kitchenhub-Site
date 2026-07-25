@@ -10,11 +10,11 @@ export function AnalyticsLoader() {
 
   return (
     <>
-      <Script id="omala-gtm-bootstrap" strategy="afterInteractive">
+      <Script id="ekoraa-gtm-bootstrap" strategy="afterInteractive">
         {`window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});`}
       </Script>
       <Script
-        id="omala-gtm"
+        id="ekoraa-gtm"
         src={`https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(gtmId)}`}
         strategy="afterInteractive"
       />

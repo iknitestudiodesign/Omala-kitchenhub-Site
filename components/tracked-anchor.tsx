@@ -1,10 +1,10 @@
 "use client";
 
 import type { AnchorHTMLAttributes, MouseEvent } from "react";
-import { trackEvent, type OmalaEvent } from "@/lib/analytics";
+import { trackEvent, type EkoraaEvent } from "@/lib/analytics";
 
 type TrackedAnchorProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  eventName: OmalaEvent;
+  eventName: EkoraaEvent;
   eventContext?: string;
 };
 

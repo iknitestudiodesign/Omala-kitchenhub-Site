@@ -65,8 +65,8 @@ function browserFormResponse(snapshot: ResponseSnapshot, formType: FormType): Re
   const title = snapshot.status === 422 ? "Please review the form" : "We could not send this yet";
   const detail = snapshot.status === 422
     ? "One or more details need attention. Return to the form and check each required field."
-    : "Your details were not lost to a query string. Please return to the form and retry, or contact Omala for help.";
-  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title} | Omala Kitchen Hub</title><style>body{margin:0;background:#f7f3e9;color:#20271d;font:16px/1.6 system-ui,sans-serif}.card{width:min(620px,calc(100% - 32px));margin:10vh auto;background:#fffefb;border:1px solid rgba(16,21,13,.15);border-radius:24px;padding:clamp(24px,5vw,48px);box-shadow:0 20px 60px rgba(9,12,8,.12)}h1{color:#10150d;font:900 clamp(34px,7vw,52px)/1.05 Arial,sans-serif}a{display:inline-block;margin:8px 12px 0 0;color:#315b13;font-weight:800}</style></head><body><main class="card"><p>Omala Kitchen Hub</p><h1>${title}</h1><p>${detail}</p><a href="${FORM_PATH[formType]}">Return to the form</a><a href="/contact">Contact Omala</a></main></body></html>`;
+    : "Your details were not lost to a query string. Please return to the form and retry, or contact Ekoraa for help.";
+  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title} | Ekoraa Kitchen Hub</title><style>body{margin:0;background:#f7f3e9;color:#20271d;font:16px/1.6 system-ui,sans-serif}.card{width:min(620px,calc(100% - 32px));margin:10vh auto;background:#fffefb;border:1px solid rgba(16,21,13,.15);border-radius:24px;padding:clamp(24px,5vw,48px);box-shadow:0 20px 60px rgba(9,12,8,.12)}h1{color:#10150d;font:900 clamp(34px,7vw,52px)/1.05 Arial,sans-serif}a{display:inline-block;margin:8px 12px 0 0;color:#315b13;font-weight:800}</style></head><body><main class="card"><p>Ekoraa Kitchen Hub</p><h1>${title}</h1><p>${detail}</p><a href="${FORM_PATH[formType]}">Return to the form</a><a href="/contact">Contact Ekoraa</a></main></body></html>`;
   return new Response(html, {
     status: snapshot.status,
     headers: { ...snapshot.headers, "cache-control": "no-store", "content-type": "text/html; charset=utf-8" },
@@ -99,9 +99,9 @@ function successSnapshot(receiptId: string, delivery: "sent" | "stubbed" = "sent
     body: {
       ok: true,
       receiptId,
-      message: "Your request has been received. Omala will follow up shortly.",
+      message: "Your request has been received. Ekoraa will follow up shortly.",
     },
-    ...(delivery === "stubbed" ? { headers: { "x-omala-delivery": "development-stub" } } : {}),
+    ...(delivery === "stubbed" ? { headers: { "x-ekoraa-delivery": "development-stub" } } : {}),
   };
 }
 
@@ -253,7 +253,7 @@ export async function handleFormRequest(request: Request, formType: FormType): P
     return errorSnapshot(
       503,
       "service_unavailable",
-      "We could not submit your request right now. Please retry or contact Omala by WhatsApp.",
+      "We could not submit your request right now. Please retry or contact Ekoraa by WhatsApp.",
     );
   };
 

@@ -77,9 +77,9 @@ export default function GroupOrdersPage() {
 
             <div className="consent-block">
               <h3>Quote communication and optional updates</h3>
-              <p>This request remains unconfirmed until Omala sends the live quote and you accept it.</p>
+              <p>This request remains unconfirmed until Ekoraa sends the live quote and you accept it.</p>
               <label className="check-row check-row--required"><input type="checkbox" name="orderAcknowledgement" value="true" required /><span>I understand this is a quote request and not yet a confirmed order. *</span></label>
-              <label className="check-row check-row--required"><input type="checkbox" name="serviceContactConsent" value="true" required /><span>Omala may contact me about this group order request. *</span></label>
+              <label className="check-row check-row--required"><input type="checkbox" name="serviceContactConsent" value="true" required /><span>Ekoraa may contact me about this group order request. *</span></label>
               <label className="check-row"><input type="checkbox" name="consentMarketingWhatsApp" value="true" /><span>Also send me optional future group-order ideas by WhatsApp.</span></label>
               <p>Read our <Link href="/privacy">privacy notice</Link> and <Link href="/order-policy">order policy</Link>.</p>
             </div>

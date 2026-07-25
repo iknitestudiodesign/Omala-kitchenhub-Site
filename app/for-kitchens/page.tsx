@@ -26,8 +26,8 @@ const pilotSteps = [
   ["Apply and meet", "A decision-maker tells us how the kitchen currently receives orders, communicates and fulfils meals."],
   ["Confirm the fit", "We review service area, menu rhythm, customer channels and whether the kitchen can support a focused pilot."],
   ["Set up the flow", "Together we confirm the menu process, order details, response times, fulfilment rules and lawful customer sources."],
-  ["Prepare the pilot", "Omala configures communication, customer organisation, order stages and the weekly scorecard."],
-  ["Run for one month", "The kitchen cooks and fulfils; Omala manages the customer desk and keeps the order information moving."],
+  ["Prepare the pilot", "Ekoraa configures communication, customer organisation, order stages and the weekly scorecard."],
+  ["Run for one month", "The kitchen cooks and fulfils; Ekoraa manages the customer desk and keeps the order information moving."],
   ["Review the truth", "We compare messages sent, engagement, purchases, response time and operational fit before discussing longer terms."],
 ];
 
@@ -60,7 +60,7 @@ export default function ForKitchensPage() {
         <div className="shell">
           <SectionIntro
             eyebrow="Built around the real work"
-            title="The kitchen keeps its identity. Omala makes the customer work repeatable."
+            title="The kitchen keeps its identity. Ekoraa makes the customer work repeatable."
             description="The goal is not to add another complicated app. It is to remove the repetitive work that keeps owners answering the same questions all day."
             align="center"
           />
@@ -68,7 +68,7 @@ export default function ForKitchensPage() {
             <article className="content-card">
               <span className="icon-tile"><Clock3 size={22} /></span>
               <h3>Fewer interruptions</h3>
-              <p>Omala handles first questions, repeat details and follow-up so kitchen time stays kitchen time.</p>
+              <p>Ekoraa handles first questions, repeat details and follow-up so kitchen time stays kitchen time.</p>
             </article>
             <article className="content-card">
               <span className="icon-tile icon-tile--warm"><UsersRound size={22} /></span>
@@ -89,7 +89,7 @@ export default function ForKitchensPage() {
           <SectionIntro
             eyebrow="The one-month pilot"
             title="Know exactly what happens before the first customer message goes out."
-            description="The pilot starts small, measures what changes and protects both Omala and the kitchen from promising more than the operation can deliver."
+            description="The pilot starts small, measures what changes and protects both Ekoraa and the kitchen from promising more than the operation can deliver."
           />
           <div className="timeline">
             {pilotSteps.map(([title, description], index) => (
@@ -108,7 +108,7 @@ export default function ForKitchensPage() {
           <article className="responsibility-card responsibility-card--green">
             <div className="responsibility-title">
               <BrandIcon />
-              <div><small>Omala owns</small><h3>The customer desk</h3></div>
+              <div><small>Ekoraa owns</small><h3>The customer desk</h3></div>
             </div>
             <ul className="check-list check-list--light">
               <li><Check size={16} /> Menu sharing and approved outreach</li>
@@ -139,7 +139,7 @@ export default function ForKitchensPage() {
             <SectionIntro
               eyebrow="A good pilot fit"
               title="We are looking for kitchens ready to communicate clearly and fulfil consistently."
-              description="Omala works best when the kitchen has a real offer, a decision-maker who can act, and customers or an audience it is lawfully allowed to contact."
+              description="Ekoraa works best when the kitchen has a real offer, a decision-maker who can act, and customers or an audience it is lawfully allowed to contact."
             />
             <ul className="plain-checks">
               <li><CheckCircle2 size={18} /> An active menu or repeat meal offer</li>
@@ -275,7 +275,7 @@ export default function ForKitchensPage() {
             <fieldset className="form-group">
               <legend>Why now?</legend>
               <label className="field--full">
-                <span>What would you most like Omala to improve?</span>
+                <span>What would you most like Ekoraa to improve?</span>
                 <textarea name="pilotGoals" placeholder="Tell us where communication or order handling is costing the kitchen time today." />
               </label>
             </fieldset>
@@ -289,11 +289,11 @@ export default function ForKitchensPage() {
               </label>
               <label className="check-row check-row--required">
                 <input type="checkbox" name="serviceContactConsent" value="true" required />
-                <span>Omala may contact me about this application and possible pilot. *</span>
+                <span>Ekoraa may contact me about this application and possible pilot. *</span>
               </label>
               <label className="check-row">
                 <input type="checkbox" name="consentMarketingWhatsApp" value="true" />
-                <span>Also send me optional Omala news and kitchen opportunities by WhatsApp.</span>
+                <span>Also send me optional Ekoraa news and kitchen opportunities by WhatsApp.</span>
               </label>
               <p>Read our <Link href="/privacy">privacy notice</Link> and <Link href="/marketing-notice">marketing notice</Link>.</p>
             </div>
